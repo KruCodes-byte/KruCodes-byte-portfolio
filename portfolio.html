@@ -9,38 +9,108 @@
 
 <link rel="stylesheet" href="style.css">
 
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header class="navbar">
+<header class="header">
 
 <div class="logo-area">
 <img src="assets/logo.svg" class="logo-img">
-<span class="logo-text">CyberShield</span>
+<span class="logo-text">KruCodes-byte</span>
 </div>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="team.html">Team</a>
-<a href="contact.html">Contact</a>
+
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="team.html">Team</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
 </nav>
+
+<div class="menu-toggle" id="menuToggle">
+<span></span>
+<span></span>
+<span></span>
+</div>
 
 </header>
 
 
-<section class="section">
 
-<h1 class="section-title">Security Projects</h1>
+<section class="competition">
 
-<div class="portfolio-grid">
+<h2 class="section-title">เกียรติบัตร (Certificate)</h2>
 
-<div class="portfolio-item">Firewall System</div>
-<div class="portfolio-item">Cloud Defense</div>
-<div class="portfolio-item">Threat Detection AI</div>
+<div class="carousel">
+
+<button class="arrow left" onclick="slideLeft(this)">&#10094;</button>
+
+<div class="carousel-track">
+
+<div class="card" onclick="openModal('assets/IMG_7207.JPG','การประกวด TSU นวัตกรรมบอร์ดเกมส์','รางวัลรองชนะเลิศอันดับ 2')">
+<img src="assets/IMG_7207.JPG">
+<p>การประกวด "TSU นวัตกรรมบอร์ดเกมส์"</p>
+<p>รางวัลรองชนะเลิศอันดับ 2</p>
+</div>
+
+<div class="card" onclick="openModal('assets/Scan_20260306 (6).jpg','ได้ปฏิบัติหน้าที่เป็นผู้นำเสนอบอร์ดเกมผ่านเวที่นิทรรศการ','โครงการ The Board Game of Love Exhibition นิทรรศการบอร์ดเกมแห่งความรัก')">
+<img src="assets/Scan_20260306 (6).jpg">
+<p>ได้ปฏิบัติหน้าที่เป็นผู้นำเสนอบอร์ดเกมผ่านเวที่นิทรรศการ</p>
+<p>โครงการ The Board Game of Love Exhibition </p>
+</div>
+
+<div class="card" onclick="openModal('assets/Scan_20260306 (6).jpg','ได้ปฏิบัติหน้าที่เป็นผู้นำเสนอบอร์ดเกมผ่านเวที่นิทรรศการ','โครงการ The Board Game of Love Exhibition นิทรรศการบอร์ดเกมแห่งความรัก')">
+<img src="assets/Scan_20260306 (6).jpg">
+<p>ได้ปฏิบัติหน้าที่เป็นผู้นำเสนอบอร์ดเกมผ่านเวที่นิทรรศการ</p>
+<p>โครงการ The Board Game of Love Exhibition นิทรรศการบอร์ดเกมแห่งความรัก</p>
+</div>
+
+<button class="arrow right" onclick="slideRight(this)">&#10095;</button>
+
+</div>
+
+</section>
+
+<section class="competition">
+
+<h2 class="section-title">การแข่งขัน</h2>
+
+<div class="carousel">
+
+<button class="arrow left" onclick="slideLeft(this)">&#10094;</button>
+
+<div class="carousel-track">
+
+<div class="card">
+<img src="assets/PORTFOLIO (1).jpg">
+<p>การแข่งขันโครงงาน</p>
+</div>
+
+<div class="card">
+<img src="assets/PORTFOLIO (2).jpg">
+<p>การแข่งขันโครงงาน</p>
+</div>
+
+<div class="card">
+<img src="assets/PORTFOLIO.jpg">
+<p>การแข่งขันโครงงาน</p>
+</div>
+
+<div class="card">
+<img src="assets/PORTFOLIO (1).jpg">
+<p>การแข่งขันโครงงาน</p>
+</div>
+
+</div>
+
+<button class="arrow right" onclick="slideRight(this)">&#10095;</button>
 
 </div>
 
@@ -51,8 +121,13 @@
 <div class="footer-grid">
 
 <div>
-<h3>CyberShield</h3>
-<p>Advanced Cyber Security Solutions</p>
+<h3>KruCodes-byte</h3>
+<p>
+เว็บไซต์พอร์ตโฟลิโอของนิสิตครูเทคโนโลยี<br>
+สอนเขียนโปรแกรม • พัฒนาเว็บไซต์ <br>
+ ถ่ายภาพ • ตัดต่อ • ออกแบบ<br>
+เรียนรู้และสร้างผลงานผ่านโปรเจกต์จริง
+</p>
 </div>
 
 <div>
@@ -67,18 +142,43 @@
 
 <div>
 <h4>Contact</h4>
-<p>security@cybershield.com</p>
-<p>Cyber City</p>
-<p>+66 000 000</p>
+<a href="https://github.com/KruCodes-byte" target="_blank">
+<i class="fa-brands fa-github"></i> GitHub : KruCodes-byte
+</a>
+
+<a href="https://www.youtube.com/@KruCodes-byte">
+<i class="fa-brands fa-youtube"></i> YouTube : KruCodes-byte
+</a>
+
+<a href="https://www.facebook.com/share/1KB2Jo7AXF/?mibextid=wwXIfr">
+<i class="fa-brands fa-facebook"></i> Facebook : Sakkarin Bxmqz
+</a>
+
+<span>
+<i class="fa-solid fa-phone"></i> +66 93 283 2498
+</span>
 </div>
+
 
 </div>
 
 <p class="copyright">
-© 2026 CyberShield Security
+© 2026 KruCodes-byte
 </p>
 
 </footer>
 
+<script src="script.js"></script>
+<div id="imgModal" class="modal">
+
+<span class="close" onclick="closeModal()">&times;</span>
+
+<img id="modalImg">
+
+<h3 id="modalTitle"></h3>
+
+<p id="modalDesc"></p>
+
+</div>
 </body>
 </html>
