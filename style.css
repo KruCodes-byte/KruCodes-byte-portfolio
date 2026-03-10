@@ -612,8 +612,8 @@ align-items:center;
 
 .modal-content{
 
-max-width:200px;
-width:20%;
+max-width:700px;
+width:80%;
 
 animation:zoomIn 0.35s ease;
 
@@ -625,8 +625,8 @@ animation:zoomIn 0.35s ease;
 width: auto;
 height: auto;
 
-max-width: 20%;
-max-height: 30%;
+max-width: 55%;
+max-height: 75%;
 
 border-radius:12px;
 
@@ -706,4 +706,75 @@ opacity:1;
 transform:scale(1.03);
 transition:0.3s;
 
+}
+
+.card{
+display:block;
+text-decoration:none;
+color:white;
+}
+
+/* ===== MOBILE PROJECT DETAIL ===== */
+
+@media (max-width:768px){
+
+.detail-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.detail-image img{
+
+width:100%;
+height:auto;
+
+}
+
+.detail-card{
+
+margin-top:15px;
+
+}
+
+}
+
+.carousel{
+position:relative;
+}
+
+.carousel-track{
+display:flex;
+gap:25px;
+overflow-x:auto;
+scroll-behavior:smooth;
+}
+
+.arrow{
+position:absolute;
+top:40%;
+
+width:40px;
+height:40px;
+
+border-radius:50%;
+border:none;
+
+background:white;
+
+cursor:pointer;
+
+z-index:10;
+}
+
+.arrow.left{
+left:-20px;
+}
+
+.arrow.right{
+right:-20px;
+}
+
+.carousel-track::-webkit-scrollbar{
+display:none;
 }

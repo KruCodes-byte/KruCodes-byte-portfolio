@@ -4,7 +4,7 @@ const typingElement = document.getElementById("typing");
 
 if(typingElement){
 
-const text="Protecting organizations from cyber threats.";
+const text="KruCodes-byte.";
 
 let i=0;
 
@@ -163,5 +163,26 @@ document.getElementById("modalDesc").innerText=desc;
 function closeModal(){
 
 document.getElementById("imgModal").style.display="none";
+
+}
+function slideRight(btn){
+
+const track = btn.parentElement.querySelector(".carousel-track");
+
+track.scrollBy({
+left:320,
+behavior:"smooth"
+});
+
+}
+
+function slideLeft(btn){
+
+const track = btn.parentElement.querySelector(".carousel-track");
+
+track.scrollBy({
+left:-320,
+behavior:"smooth"
+});
 
 }
