@@ -222,6 +222,7 @@ body::after {
     width: 30px;
     cursor: pointer;
     z-index: 1001;
+    position: relative;
 }
 
 .menu-toggle span {
@@ -1295,6 +1296,12 @@ display:none;
     .header {
         padding: 15px 5%;
     }
+    .logo-text {
+        font-size: 20px !important;
+    }
+    .logo-img {
+        width: 35px !important;
+    }
     .menu-toggle {
         display: flex !important;
         z-index: 1002;
@@ -1325,6 +1332,9 @@ display:none;
     }
 
     /* Hero Resizing */
+    .disney-hero {
+        background-attachment: scroll !important;
+    }
     .hero-title, .activities-title {
         font-size: 34px !important;
         margin-bottom: 12px;
