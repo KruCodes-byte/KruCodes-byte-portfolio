@@ -28,12 +28,13 @@
 <nav>
 
 <ul class="nav-links" id="navLinks">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="portfolio.html">Portfolio</a></li>
-<li><a href="team.html">Team</a></li>
-<li><a href="contact.html">Contact</a></li>
+<li><a href="index.html">หน้าแรก</a></li>
+<li><a href="about.html">เกี่ยวกับฉัน</a></li>
+<li><a href="services.html">บริการ</a></li>
+<li><a href="portfolio.html">ผลงาน</a></li>
+            <li><a href="activities.html">กิจกรรม</a></li>
+<li><a href="team.html">ทีมงาน</a></li>
+<li><a href="contact.html">ติดต่อ</a></li>
 </ul>
 
 </nav>
@@ -47,27 +48,118 @@
 </header>
 
 
-<section class="hero">
-
-
-
-<h1 class="hero-title glow">Sakkarin's Portfolio</h1>
-
-<p id="typing"></p>
-
-<a class="btn-primary" href="portfolio.html">สำราจ Portfolio</a>
-
+<!-- Hero Section with Rays -->
+<section class="hero disney-hero reveal">
+    <div class="hero-content">
+        <h1 class="hero-title glow reveal-left" style="font-size: 64px;">สวัสดีครับ ผม <span style="color:#38bdf8;">ศักรินทร์</span></h1>
+        <p id="typing" class="reveal-right" style="font-size: 24px; color: #cbd5e1; font-family: 'Inter', sans-serif; height: 35px; margin-bottom: 20px;"></p>
+        <div class="reveal" style="margin-top: 20px;">
+            <a class="btn-primary" href="portfolio.html">ดูผลงาน</a>
+            <a class="btn-secondary" href="contact.html" style="margin-left: 15px;">ติดต่อผม</a>
+        </div>
+    </div>
+    <!-- Wavy Divider -->
+    <svg class="wave-bottom" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path fill="#1459e6" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,186.7C384,192,480,224,576,218.7C672,213,768,171,864,154.7C960,139,1056,149,1152,170.7C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
 </section>
-<section class="slider-section">
 
-<div class="slider">
+<!-- About & Skills Section -->
+<section class="welcome-section reveal" style="padding-top: 100px;">
+    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <h2 class="welcome-title">เกี่ยวกับผม (About Me)</h2>
+        <p class="welcome-text" style="font-size: 18px; line-height: 1.8; color: #cbd5e1; margin-bottom: 40px;">
+            ผมคือนิสิตครูเทคโนโลยีที่มีความหลงใหลในการเขียนโปรแกรม ออกแบบ UI/UX และการถ่ายทอดความรู้ ผมเชื่อมั่นในการสร้างสรรค์นวัตกรรมที่ใช้งานได้จริงและตอบโจทย์ผู้ใช้งาน ไม่ว่าจะเป็นการพัฒนาเว็บไซต์หรือสื่อการเรียนการสอน
+        </p>
+        
+        <h3 style="font-family: 'Inter', sans-serif; color: #f8fafc; font-size: 24px; margin-bottom: 20px;">ทักษะ & ความเชี่ยวชาญ (Tech Stack)</h3>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-bottom: 50px;">
+            <span class="skill-badge"><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span class="skill-badge"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="skill-badge"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="skill-badge"><i class="fa-solid fa-microchip"></i> Arduino / Micro:bit</span>
+            <span class="skill-badge"><i class="fa-solid fa-camera"></i> การถ่ายภาพ</span>
+            <span class="skill-badge"><i class="fa-solid fa-video"></i> ถ่ายคลิป & ตัดต่อ</span>
+            <span class="skill-badge"><i class="fa-solid fa-pen-nib"></i> ทำกราฟิก</span>
+            <span class="skill-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> สกิลโปรแกรม Adobe</span>
+        </div>
+    </div>
+</section>
 
-<img src="assets/PORTFOLIO (1).jpg" class="slide active">
-<img src="assets/TSU Green City  บอร์ดเกมเพื่อการเรียนรู ้ สู่การพัฒนาที่ยั่งยืน (พรีเซนเทชั่น).jpg" class="slide">
-<img src="assets/IMG_7207.JPG" class="slide">
+<!-- Featured Projects Section -->
+<section class="featured-section reveal">
+    <h2 class="featured-title">โปรเจกต์ที่ภาคภูมิใจ (Selected Works)</h2>
+    <div class="featured-grid">
+        <div class="featured-card glass reveal-left">
+            <img src="work/แบบโพสต์ facebook.png" alt="Project 1">
+            <div class="card-info">
+                <span class="badge">กราฟิก</span>
+                <h3>ออกแบบสื่อลง Facebook</h3>
+                <a href="portfolio.html" class="read-more">อ่านเพิ่มเติม &gt;</a>
+            </div>
+        </div>
+        
+        <div class="featured-card glass reveal">
+            <img src="work/สร้างแอพพลาเคชั่น/สำเนาของ Smart HDP.png" alt="Project 2">
+            <div class="card-info">
+                <span class="badge">แอปพลิเคชัน</span>
+                <h3>แอปพลิเคชัน Smart HDP</h3>
+                <a href="portfolio.html" class="read-more">อ่านเพิ่มเติม &gt;</a>
+            </div>
+        </div>
+        
+        <div class="featured-card glass reveal-right">
+            <img src="work/ออกแบบโลโก้/eN8ZUUYxZ.png" alt="Project 3">
+            <div class="card-info">
+                <span class="badge">โลโก้</span>
+                <h3>ออกแบบโลโก้ eN8ZUUYxZ</h3>
+                <a href="portfolio.html" class="read-more">อ่านเพิ่มเติม &gt;</a>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <a href="portfolio.html" class="btn-primary" style="margin-top: 30px; display: inline-block;">ดูเพิ่มเติม</a>
+    </div>
+</section>
 
-</div>
+<!-- Game Gallery / Portfolio Carousel -->
+<section class="gallery-section reveal">
+    <!-- Cloud Top -->
+    <svg class="cloud-top" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path fill="#f8fafc" fill-opacity="1" d="M0,64L60,85.3C120,107,240,150,360,165.3C480,181,600,171,720,149.3C840,128,960,96,1080,90.7C1200,85,1320,107,1380,117.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    </svg>
+    
+    <h2 class="gallery-title">ภาพถ่าย & กิจกรรม (Gallery)</h2>
+    <div class="gallery-carousel">
+        <div class="polaroid reveal-left" style="transform: rotate(-4deg);">
+            <img src="certificate/Scan_20260306 (6).jpg" alt="Gallery 1" onerror="this.src='assets/PORTFOLIO (1).jpg'">
+            <div class="caption">#TeamWork</div>
+        </div>
+        <div class="polaroid reveal" style="transform: rotate(2deg); z-index: 2; scale: 1.1;">
+            <img src="assets/TSU Green City  บอร์ดเกมเพื่อการเรียนรู ้ สู่การพัฒนาที่ยั่งยืน (พรีเซนเทชั่น).jpg" alt="Gallery 2" onerror="this.src='assets/PORTFOLIO (1).jpg'">
+            <div class="caption">#TSUGreenCity</div>
+        </div>
+        <div class="polaroid reveal-right" style="transform: rotate(5deg);">
+            <img src="certificate/Scan_20260310.jpg" alt="Gallery 3" onerror="this.src='assets/PORTFOLIO (1).jpg'">
+            <div class="caption">#Exhibition</div>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 50px; position: relative; z-index: 10;">
+        <a href="portfolio.html" class="btn-secondary" style="background:#38bdf8; display:inline-block; padding:12px 25px; border-radius:8px; text-decoration:none; color:white; font-weight:bold;">ดูผลงานแกลเลอรีทั้งหมด</a>
+    </div>
 
+    <!-- Cloud Bottom -->
+    <svg class="cloud-bottom" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path fill="#3b1b6e" fill-opacity="1" d="M0,256L60,240C120,224,240,192,360,192C480,192,600,224,720,234.7C840,245,960,235,1080,208C1200,181,1320,139,1380,117.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+    </svg>
+</section>
+
+<!-- CTA Section (Replaced Fun Facts) -->
+<section class="facts-section reveal" style="text-align: center; padding: 100px 20px;">
+    <h2 class="facts-title" style="margin-bottom: 20px; font-size: 36px; padding-bottom: 0;">พร้อมที่จะเริ่มต้นโปรเจกต์ใหม่ไปด้วยกันไหม?</h2>
+    <p style="color: #cbd5e1; font-size: 18px; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">หากคุณกำลังมองหาผู้ร่วมงานที่มีความมุ่งมั่น หรือต้องการพูดคุยแลกเปลี่ยนไอเดียด้านเทคโนโลยีการศึกษา สามารถติดต่อผมได้ทันทีครับ</p>
+    <a href="contact.html" class="btn-primary" style="font-size: 18px; padding: 15px 40px; box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);">ติดต่อฉันเลย!</a>
 </section>
 
 
@@ -86,17 +178,18 @@
 </div>
 
 <div>
-<h4>Navigation</h4>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="team.html">Team</a>
-<a href="contact.html">Contact</a>
+<h4>เมนูนำทาง</h4>
+<a href="index.html">หน้าแรก</a>
+<a href="about.html">เกี่ยวกับฉัน</a>
+<a href="services.html">บริการ</a>
+<a href="portfolio.html">ผลงาน</a>
+<a href="activities.html">กิจกรรม</a>
+<a href="team.html">ทีมงาน</a>
+<a href="contact.html">ติดต่อ</a>
 </div>
 
 <div>
-<h4>Contact</h4>
+<h4>ติดต่อเรา</h4>
 <a href="https://github.com/KruCodes-byte" target="_blank">
 <i class="fa-brands fa-github"></i> GitHub : KruCodes-byte
 </a>
